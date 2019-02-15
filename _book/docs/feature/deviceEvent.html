@@ -1,0 +1,762 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>deviceEvent · 车商通JS-SDK文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pullRefresh.html" />
+    
+    
+    <link rel="prev" href="extendBtn.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://c.58corp.com/pages/viewpage.action?pageId=17596943">
+            
+                    
+                    旧版SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../SDK.html">
+            
+                <a href="../SDK.html">
+            
+                    
+                    新版SDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../new/webview.html">
+            
+                <a href="../new/webview.html">
+            
+                    
+                    Android新容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../tool/tool.html">
+            
+                <a href="../tool/tool.html">
+            
+                    
+                    工具类方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../tool/versionCompare.html">
+            
+                <a href="../tool/versionCompare.html">
+            
+                    
+                    versionCompare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../tool/getVersion.html">
+            
+                <a href="../tool/getVersion.html">
+            
+                    
+                    getVersion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../tool/getParamFromUrl.html">
+            
+                <a href="../tool/getParamFromUrl.html">
+            
+                    
+                    getParamFromUrl
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../pagetrans/pagetrans.html">
+            
+                <a href="../pagetrans/pagetrans.html">
+            
+                    
+                    跳转类方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../pagetrans/pagetransWeb.html">
+            
+                <a href="../pagetrans/pagetransWeb.html">
+            
+                    
+                    pagetransWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../pagetrans/pagetransRN.html">
+            
+                <a href="../pagetrans/pagetransRN.html">
+            
+                    
+                    pagetransRN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../pagetrans/pagetransNative.html">
+            
+                <a href="../pagetrans/pagetransNative.html">
+            
+                    
+                    pagetransNative
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../component/component.html">
+            
+                <a href="../component/component.html">
+            
+                    
+                    组件类方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../component/toast.html">
+            
+                <a href="../component/toast.html">
+            
+                    
+                    toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../component/loading.html">
+            
+                <a href="../component/loading.html">
+            
+                    
+                    loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../component/dialog.html">
+            
+                <a href="../component/dialog.html">
+            
+                    
+                    dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="feature.html">
+            
+                <a href="feature.html">
+            
+                    
+                    功能类方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="imgUpload.html">
+            
+                <a href="imgUpload.html">
+            
+                    
+                    imgUpload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="imgSelect.html">
+            
+                <a href="imgSelect.html">
+            
+                    
+                    imgSelect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="imgPreview.html">
+            
+                <a href="imgPreview.html">
+            
+                    
+                    imgPreview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="endAnimate.html">
+            
+                <a href="endAnimate.html">
+            
+                    
+                    endAnimate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="share.html">
+            
+                <a href="share.html">
+            
+                    
+                    share
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="gotoPay.html">
+            
+                <a href="gotoPay.html">
+            
+                    
+                    gotoPay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="getLocation.html">
+            
+                <a href="getLocation.html">
+            
+                    
+                    getLocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="setWeblog.html">
+            
+                <a href="setWeblog.html">
+            
+                    
+                    setWeblog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="closeCurrentPage.html">
+            
+                <a href="closeCurrentPage.html">
+            
+                    
+                    closeCurrentPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="navigatorConfig.html">
+            
+                <a href="navigatorConfig.html">
+            
+                    
+                    navigatorConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.11" data-path="setTitle.html">
+            
+                <a href="setTitle.html">
+            
+                    
+                    setTitle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.12" data-path="extendBtn.html">
+            
+                <a href="extendBtn.html">
+            
+                    
+                    extendBtn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5.13" data-path="deviceEvent.html">
+            
+                <a href="deviceEvent.html">
+            
+                    
+                    deviceEvent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.14" data-path="pullRefresh.html">
+            
+                <a href="pullRefresh.html">
+            
+                    
+                    pullRefresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../invoke/invoke.html">
+            
+                <a href="../invoke/invoke.html">
+            
+                    
+                    invoke
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >deviceEvent</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="wbcstdeviceeventparams-callback"><a name="wbcstdeviceeventparams-callback" class="anchor-navigation-ex-anchor" href="#wbcstdeviceeventparams-callback"><i class="fa fa-link" aria-hidden="true"></i></a>WBCST.deviceEvent(params, callback)</h2>
+<p>v3.8.0</p>
+<h2 id="&#x63CF;&#x8FF0;"><a name="&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63CF;&#x8FF0;</h2>
+<ul>
+<li>&#x76D1;&#x542C;native&#x65F6;&#x95F4;&#xFF0C;&#x6BD4;&#x5982;&#x76D1;&#x542C;Webview&#x9876;&#x90E8;&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;</li>
+</ul>
+<h2 id="&#x53C2;&#x6570;"><a name="&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>params</td>
+<td>&#x221A;</td>
+<td>Object</td>
+<td>&#x76D1;&#x542C;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>&#x221A;</td>
+<td>Function</td>
+<td>&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x53C2;&#x6570;params&#x4E3A;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>{
+    type
+}
+</code></pre><table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;</th>
+<th>&#x5FC5;&#x586B;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>&#x221A;</td>
+<td>String</td>
+<td>&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#xFF0C;&#x5B9A;&#x4E49;&#x7684;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#x5FC5;&#x987B;&#x662F;&#x548C;native&#x7EA6;&#x5B9A;&#x597D;&#x7684;&#x6709;&#x6548;&#x4E8B;&#x4EF6;&#xFF0C;&#x4E0D;&#x80FD;&#x8C01;&#x8FB9;&#x586B;&#x5199;&#xFF1B;&#x76EE;&#x524D;&#x53EA;&#x5B9E;&#x73B0;&#x4E86;&#x76D1;&#x542C;&#xFF0C;webview&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;goback&#xFF1B;&#x5982;&#x679C;&#x4E1A;&#x52A1;&#x65B9;&#x8C03;&#x7528;&#x4E86;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x76D1;&#x542C;&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;&#xFF0C;&#x70B9;&#x51FB;&#x5DE6;&#x4E0A;&#x89D2;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x65F6;&#xFF0C;native&#x5C31;&#x4E0D;&#x4F1A;&#x505A;&#x8FD4;&#x56DE;&#x64CD;&#x4F5C;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x7684;callback&#xFF0C;&#x7531;&#x4E1A;&#x52A1;&#x65B9;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#x5B8C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x540E;&#xFF0C;&#x5728;&#x505A;&#x8FD4;&#x56DE;&#x64CD;&#x4F5C;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x793A;&#x4F8B;"><a name="&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;</h2>
+<pre><code>WBCST.deviceEvent({ type: &apos;goback&apos; }, event =&gt; {
+    WBCST.dialog(
+        {
+            title: &apos;&#x63D0;&#x793A;&apos;,
+            content: &apos;&#x662F;&#x5426;&#x4FDD;&#x5B58;&#x8349;&#x7A3F;&#xFF1F;&apos;,
+            btns: [{ text: &apos;&#x53D6;&#x6D88;&apos;, color: &apos;#000000&apos; }, { text: &apos;&#x4FDD;&#x5B58;&apos;, color: &apos;#ff552e&apos; }]
+        },
+        event =&gt; {
+            //TODO
+           if(event &amp;&amp; event.result == 0){
+               WBCST.closeCurrentPage();
+           }
+        }
+    );
+});
+</code></pre><h2 id="&#x56DE;&#x8C03;&#x53C2;&#x6570;"><a name="&#x56DE;&#x8C03;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x56DE;&#x8C03;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DE;&#x8C03;&#x53C2;&#x6570;</h2>
+<pre><code>//&#x8FD4;&#x56DE;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;
+{
+    type: &apos;goback&apos;
+}
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; gongchenghui 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-01-23 16:05:55
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="extendBtn.html" class="navigation navigation-prev " aria-label="Previous page: extendBtn">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pullRefresh.html" class="navigation navigation-next " aria-label="Next page: pullRefresh">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"deviceEvent","level":"1.3.5.13","depth":3,"next":{"title":"pullRefresh","level":"1.3.5.14","depth":3,"path":"docs/feature/pullRefresh.md","ref":"docs/feature/pullRefresh.md","articles":[]},"previous":{"title":"extendBtn","level":"1.3.5.12","depth":3,"path":"docs/feature/extendBtn.md","ref":"docs/feature/extendBtn.md","articles":[]},"dir":"ltr"},"config":{"_comment":{"plugins":{"toggle-chapters":"目录折叠","anchor-navigation-ex":"添加Toc到侧边悬浮导航以及回到顶部按钮","splitter":"使侧边栏的宽度可以自由调节","theme-default":"将 showLevel 设为 true， 就可以显示标题前面的数字索引，默认不显示","mermaid":"支持渲染Mermaid图表 "}},"plugins":["collapsible-menu","anchor-navigation-ex","tbfed-pagefooter","disqus"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy gongchenghui 2019","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"collapsible-menu":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"车商通JS-SDK文档","gitbook":"*"},"file":{"path":"docs/feature/deviceEvent.md","mtime":"2019-01-23T08:05:55.872Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-15T06:32:24.350Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

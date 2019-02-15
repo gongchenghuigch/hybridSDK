@@ -1,0 +1,28 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "本项目包含新版SDK的定义和使用",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gitbook serve",
+    "build": "gitbook install && gitbook build",
+    "init": "gitbook init"
+  },
+  "author": "gongchenghui",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-cli":"",
+    "gitbook": "^3.2.3",
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "webpack": "^4.17.2",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@igit.58corp.com:fe_ershouche/cst-sdk-api.git"
+  }
+}
